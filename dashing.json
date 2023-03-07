@@ -1,0 +1,49 @@
+{
+    "name": "TiDB",
+    "package": "tidb",
+    "author": {
+        "name": "Cathy Huang",
+        "link": ""
+     },
+    "index": "TOC.html",
+    "selectors":
+    {
+        "Command": {
+                    "type":"Package",
+                    "regexp": " - The Swiss Army Knife of Embedded Linux",
+                    "replacement": "",
+                    "matchpath": "doc/.*\\.html"
+        },
+        "h2 > span.kind-functions": {
+            "type": "Function",
+            "matchpath": "Documents/functions-and-operators/*.html"
+        },
+        "h1 > span.kind-variables": {
+            "type": "Variables",
+            "matchpath": "Documents/system-variables.html"
+        },
+        "h3 > span.kind-operators": {
+            "type": "Operator",
+            "matchpath": "Documents/functions-and-operators/*.html"
+        },
+        "h4 > span.kind-statement": {
+            "type": "Statement",
+            "matchpath": "Documents/sql-statements/*.html"
+        },
+        "h5 > span.kind-guide": {
+            "type": "Guide",
+            "matchpath": "Documents/develop/*.html"
+        },
+        "h6 > span.kind-command": {
+            "type": "Command",
+            "matchpath": "Documents/tiup/*.html"
+        }
+    },
+    "ignore": [
+        "ABOUT", "doc-templates", "Release", "Resource"
+    ],
+    "icon32x32": "icon.png",
+    "allowJS": false,
+    "ExternalURL": "http://docs.pingcap.com"
+}
+
